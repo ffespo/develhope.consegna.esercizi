@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="Grid.css">
+  <title>Calcolatrice CSS Grid</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f1f1f1;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .calculator {
+      width: 260px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .display {
+      background-color: #333;
+      color: white;
+      font-size: 2rem;
+      text-align: right;
+      padding: 20px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    button {
+      font-size: 1.5rem;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #e0e6ed;
+      cursor: pointer;
+      outline: none;
+    }
+
+    button:hover {
+      background-color: #d3d9e0;
+    }
+
+    /* Operatori in alto */
+    .buttons button:nth-child(-n+4) {
+      background-color: #cbd5e0;
+    }
+
+    /* Bottone = */
+    .equal {
+      grid-row: 2 / span 5;
+      grid-column: 4;
+      background-color: #f56565;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">0</div>
+    <div class="buttons">
+      <button>+</button>
+      <button>-</button>
+      <button>×</button>
+      <button>÷</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="equal">=</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+
+      <button>1</button>
+      <button>2</button>
+      <but
