@@ -1,0 +1,36 @@
+/* Layout con CSS Grid */
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* Posizionamento dei blocchi nella griglia */
+#green {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+#yellow {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#red {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#blue {
+    grid-column: 3;
+    grid-row: 2 / 4;
+}
+
+#orange {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+

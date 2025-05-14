@@ -1,0 +1,34 @@
+/* Reset e stile base */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#green { background-color: #b2ffb2; }
+#yellow { background-color: #ffffb2; }
+#red { background-color: #ffb2b2; }
+#blue { background-color: #b2d9ff; }
+#orange { background-color: #ffe0b2; }
+
+/* Stile per le liste */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+li {
+    background-color: white;
+    padding: 10px;
+}
