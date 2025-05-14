@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+
+  <style>
+    /* body {
+    background-color: #011212;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: #ff8800;
+    border-radius: 50px;
+} */
+
+
+    :root {
+      --bg-body: #011212;
+      --ball-size: 100px;
+      --ball-color: #ff8800;
+      --ball-radius: 50px;
+    }
+
+    body {
+      background-color: var(--bg-body);
+    }
+
+    .ball {
+      width: var(--ball-size);
+      height: var(--ball-size);
+      background-color: var(--ball-color);
+      border-radius: var(--ball-radius);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ball"></div>
+</body>
+
+</html>
+

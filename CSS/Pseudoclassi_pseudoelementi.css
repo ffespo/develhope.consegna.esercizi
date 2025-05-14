@@ -1,0 +1,34 @@
+
+/* Primo paragrafo, prima lettera */
+p:first-of-type::first-letter {
+    float: left;
+    color: darkred;
+    border: 3px ridge darkgoldenrod;
+    padding: 16px;
+    background-color: gold;
+    margin: 8px;
+}
+
+/* Virgolette al blockquote */
+blockquote::before {
+    content: "“";
+}
+blockquote::after {
+    content: "”";
+}
+
+/* Link di base */
+a {
+    color: darkred;
+    text-decoration: none;
+}
+
+/* Link visitato */
+a:visited {
+    color: purple;
+}
+
+/* Link al passaggio del mouse */
+a:hover {
+    color: orange;
+}

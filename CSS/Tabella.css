@@ -1,0 +1,54 @@
+/* Tabella generale */
+table {
+    width: 50%;
+    border: 1px solid #263238;
+    border-collapse: collapse;
+}
+
+/* Titolo della tabella */
+caption {
+    color: #263238;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Header della tabella */
+thead {
+    background-color: #455a64;
+    color: white;
+    font-weight: 700;
+}
+
+/* Righe con colore alternato */
+tbody tr:nth-child(even) {
+    background-color: #eceff1;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #b0bec5;
+}
+
+/* Ultima riga (tfoot) */
+tfoot {
+    background-color: #78909c;
+    font-weight: 800;
+}
+
+/* Colonna Entrate (seconda colonna del corpo) */
+tbody td:nth-child(2) {
+    color: #003300;
+    text-align: right;
+}
+
+/* Colonna Uscite (terza colonna del corpo) */
+tbody td:nth-child(3) {
+    color: #7f0000;
+    text-align: right;
+}
+
+/* Allineamento a destra dei numeri anche nel footer */
+tfoot td:nth-child(2),
+tfoot td:nth-child(3) {
+    text-align: right;
+}
